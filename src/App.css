@@ -36,13 +36,15 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
-.ql-contents h2 {
+.ql-contents h2,
+h4 {
   text-align: center;
 }
 .ql-contents p {
   text-align: center;
   line-height: 10px;
 }
+
 .ql-contents .name {
   color: #3eb7f0;
 }
@@ -77,4 +79,18 @@ body {
 
 .feed-contents h2 {
   color: #3eb7f0;
+}
+
+@media screen and (max-width: 480px) {
+  .contents {
+    flex-direction: column;
+  }
+
+  .quick-links {
+    width: 100%;
+  }
+
+  .feed-contents {
+    width: 100%;
+  }
 }

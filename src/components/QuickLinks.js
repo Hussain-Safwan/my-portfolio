@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "../me.png";
 
 const QuickLinks = (props) => {
+  const showExpandBtn = window.innerWidth < 480;
+  const [showLinks, setShowLinks] = useState(!showExpandBtn);
+
+  const toggleLinks = () => {
+    setShowLinks((prev) => !prev);
+  };
+
   return (
     <div className="quick-links">
       <div className="ql-contents">
@@ -16,26 +23,33 @@ const QuickLinks = (props) => {
           </div>
         </div>
         <hr style={{ border: "0.1px solid #333" }} />
-        <div className="lower-links">
-          <div className="row">
-            <a href="">Resume</a>
+        {showExpandBtn && (
+          <div onClick={toggleLinks}>
+            <h4>Quick Links</h4>
           </div>
-          <div className="row">
-            <a href="">LinkedIn</a>
+        )}
+        {showLinks && (
+          <div className="lower-links">
+            <div className="row">
+              <a href="">Resume</a>
+            </div>
+            <div className="row">
+              <a href="">LinkedIn</a>
+            </div>
+            <div className="row">
+              <a href="">GitHub</a>
+            </div>
+            <div className="row">
+              <a href="">Medium</a>
+            </div>
+            <div className="row">
+              <a href="">LeetCode</a>
+            </div>
+            <div className="row">
+              <a href="">Contact</a>
+            </div>
           </div>
-          <div className="row">
-            <a href="">GitHub</a>
-          </div>
-          <div className="row">
-            <a href="">Medium</a>
-          </div>
-          <div className="row">
-            <a href="">LeetCode</a>
-          </div>
-          <div className="row">
-            <a href="">Contact</a>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
