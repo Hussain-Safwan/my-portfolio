@@ -1,38 +1,68 @@
+body {
+  background-color: #222;
+  color: #ddd;
+  font-family: "Scheherazade New", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .App {
+}
+
+.contents {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+}
+
+.quick-links {
+  width: 40%;
+}
+
+.ql-contents {
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.ql-contents img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.ql-contents h2 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ql-contents p {
+  text-align: center;
+  line-height: 10px;
+}
+.ql-contents .name {
+  color: #3eb7f0;
+}
+.ql-contents .name-sub {
+  font-size: 17.5px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ql-contents .row {
+  padding: 2.5px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+.ql-contents .row:hover {
+  background: #333;
+}
+.ql-contents a {
+  font-size: 20px;
+  color: #3eb7f0;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feed-contents {
+  width: 60%;
 }
