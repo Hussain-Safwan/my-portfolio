@@ -6,7 +6,9 @@ const QuickLinks = (props) => {
     <div className="quick-links">
       <div className="ql-contents">
         <div className="upper-main">
-          <img className="me-image" src={Image} />
+          <div className="image">
+            <img className="me-image" src={Image} />
+          </div>
           <h2 className="name">Hussain Md. Safwan</h2>
           <div className="name-sub">
             <p>Senior Software Engineer</p>
