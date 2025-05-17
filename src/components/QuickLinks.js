@@ -25,7 +25,7 @@ const QuickLinks = (props) => {
         <hr style={{ border: "0.1px solid #333" }} />
         {showExpandBtn && (
           <div onClick={toggleLinks}>
-            <h4>Quick Links</h4>
+            <h4 className="link">Quick Links</h4>
           </div>
         )}
         {showLinks && (

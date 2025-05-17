@@ -53,6 +53,12 @@ h4 {
   margin: auto;
 }
 
+.ql-contents .link {
+  color: #3eb7f0;
+  border-radius: 25px;
+  border: 1px solid #3eb7f0;
+}
+
 .ql-contents .row {
   padding: 2.5px 15px;
   cursor: pointer;
