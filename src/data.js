@@ -1,3 +1,30 @@
+export const quickLinks = [
+  {
+    title: "Resume",
+    link: "https://drive.google.com/file/d/1zTGj7JIiwVhPugMdATUBqLR9TxdFOVP3/view?usp=drive_link",
+  },
+  {
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/hussain-md-safwan/",
+  },
+  {
+    title: "GitHub",
+    link: "https://github.com/Hussain-Safwan",
+  },
+  {
+    title: "Medium",
+    link: "https://medium.com/@safwan-du16",
+  },
+  {
+    title: "LeetCode",
+    link: "https://leetcode.com/u/hussain-safwan/",
+  },
+  {
+    title: "Contact",
+    link: "",
+  },
+];
+
 export const news = [
   {
     date: "Feb 2025",

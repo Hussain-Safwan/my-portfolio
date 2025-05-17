@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "../me.png";
+import { quickLinks } from "../data";
 
 const QuickLinks = (props) => {
   const showExpandBtn = window.innerWidth < 480;
@@ -30,24 +31,11 @@ const QuickLinks = (props) => {
         )}
         {showLinks && (
           <div className="lower-links">
-            <div className="row">
-              <a href="">Resume</a>
-            </div>
-            <div className="row">
-              <a href="">LinkedIn</a>
-            </div>
-            <div className="row">
-              <a href="">GitHub</a>
-            </div>
-            <div className="row">
-              <a href="">Medium</a>
-            </div>
-            <div className="row">
-              <a href="">LeetCode</a>
-            </div>
-            <div className="row">
-              <a href="">Contact</a>
-            </div>
+            {quickLinks.map((item) => (
+              <div className="row">
+                <a href={item.link}>{item.title}</a>
+              </div>
+            ))}
           </div>
         )}
       </div>
