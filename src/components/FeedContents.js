@@ -1,6 +1,7 @@
 import React from "react";
+import { news, publications, projects } from "../data";
 
-const FeedContents = (props) => {
+const FeedContents = () => {
   return (
     <div className="feed-contents">
       <div className="intro">
@@ -26,14 +27,62 @@ const FeedContents = (props) => {
 
       <div className="section news">
         <h2 className="header">News</h2>
+
+        <div className="list ls-news">
+          {news.map((item, i) => (
+            <div
+              onClick={() => {
+                if (item.link) {
+                  window.open(item.link, "_blank");
+                }
+              }}
+              title={item.tooltip}
+              className={`item item-news ${i % 2 === 0 ? "" : "light"}`}
+            >
+              <strong>{`[${item.date}]`}</strong>
+              <span>{item.content}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="section publications">
         <h2 className="header">Publications</h2>
+
+        <div className="list ls-news">
+          {publications.map((item) => (
+            <div className="item item-pub">
+              <p>{item.content}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="section projects">
         <h2 className="header">Projects</h2>
+
+        <div className="list ls-news">
+          {projects.map((item, i) => (
+            <div
+              className={`item item-pro ${i % 2 === 0 ? "" : "light"}`}
+              title={item.tooltip}
+            >
+              <div className="project-header">
+                <h4>{item.title}</h4>
+                <span>{item.date}</span>
+              </div>
+              <div
+                style={{
+                  lineHeight: "20px",
+                  paddingBottom: "5px",
+                  color: "#ccc",
+                }}
+              >
+                <i>{item.content}</i>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="section contacts">

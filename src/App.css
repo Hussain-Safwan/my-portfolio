@@ -71,14 +71,38 @@ h4 {
 
 .feed-contents {
   width: 60%;
+  margin-top: 30px;
 }
 
-.feed-contents .intro p {
+.feed-contents p {
   line-height: 17.5px;
 }
 
 .feed-contents h2 {
   color: #3eb7f0;
+  margin: 0;
+}
+.feed-contents h4 {
+  margin: 0;
+}
+
+.feed-contents .list {
+}
+.feed-contents .list .item {
+  padding: 5px 15px;
+  border-radius: 7.5;
+  cursor: pointer;
+}
+.feed-contents .list .light {
+  background: #333;
+}
+.feed-contents .list span {
+  margin-left: 10px;
+}
+
+.feed-contents .project-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 480px) {
