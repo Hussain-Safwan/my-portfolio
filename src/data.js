@@ -40,6 +40,8 @@ export const publications = [
   {
     content:
       'Hussain Md. Safwan, Mahbub Islam Mahim, and Fawwaz Mohammed Amin. "Enhancing Wide-Angle Image Using Narrow-Angle View of the Same Scene." arXiv preprint arXiv:2504.09455 (2025).',
+    link: "https://arxiv.org/pdf/2504.09455v2",
+    tooltip: "View paper",
   },
 ];
 

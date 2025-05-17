@@ -51,7 +51,15 @@ const FeedContents = () => {
 
         <div className="list ls-news">
           {publications.map((item) => (
-            <div className="item item-pub">
+            <div
+              onClick={() => {
+                if (item.link) {
+                  window.open(item.link, "_blank");
+                }
+              }}
+              title={item.tooltip}
+              className="item item-pub"
+            >
               <p>{item.content}</p>
             </div>
           ))}
@@ -87,6 +95,22 @@ const FeedContents = () => {
 
       <div className="section contacts">
         <h2 className="header">Contacts</h2>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            lineHeight: "22.5px",
+          }}
+        >
+          <span>
+            <strong>Samsung R&D Institute Bangladesh</strong>
+          </span>
+          <span>111 Bir Uttam CR Dutta Road, Dhaka 1207</span>
+          <span>
+            Email:
+            <a href="mailto:safwan.du16@gmail.com">safwan.du16@gmail.com</a>
+          </span>
+        </div>
       </div>
     </div>
   );
