@@ -105,8 +105,15 @@ h4 {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .contents {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .contents {
+    width: 85%;
     flex-direction: column;
   }
 
@@ -116,5 +123,13 @@ h4 {
 
   .feed-contents {
     width: 100%;
+    margin-top: 0;
+  }
+  .feed-contents .project-header {
+    flex-direction: column;
+  }
+  .feed-contents .project-header h4 {
+    text-align: left;
+    padding: 0;
   }
 }
