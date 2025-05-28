@@ -21,14 +21,14 @@ export const quickLinks = [
   },
   {
     title: "Contact",
-    link: "",
+    link: "https://hussain-safwan.netlify.app/#contacts",
   },
 ];
 
 export const news = [
   {
     date: "Feb 2025",
-    content: "Idea graded A1(Patentatble) at Samsung Headquarters",
+    content: "Idea accepted for patent filing at Samsung Headquarters",
     link: "https://drive.google.com/file/d/10cWPdw6HLkk3Ld-pFuOXpRrhJzf7S45P/view?usp=drive_link",
     tooltip: "View email evidence",
   },
@@ -78,7 +78,7 @@ export const projects = [
     title: "Enhancing Wide-Angle Image.",
     content: "PyTorch implementation of the paper.",
     tooltip: "View Github repository",
-    link: "",
+    link: "https://github.com/Hussain-Safwan/image-super-resolution",
   },
   {
     date: "Jan 2020 - Aug 2021",

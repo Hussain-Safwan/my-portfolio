@@ -11,8 +11,8 @@ function App() {
         <FeedContents />
       </div>
 
-      <p style={{ fontSize: "13px", textAlign: "right", width: "98%" }}>
-        Last updated May 17, 2025
+      <p style={{ fontSize: "15px", textAlign: "right", width: "98%" }}>
+        Last updated on May 17, 2025
       </p>
     </div>
   );
