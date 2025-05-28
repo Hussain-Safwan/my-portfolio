@@ -7,21 +7,27 @@ const FeedContents = () => {
       <div className="intro">
         <p>Hello, I am Hussain Md. Safwan.</p>
         <p>
-          you aren't satisfied with the build tool and configuration choices,
-          you can `eject` at any time. This command will remove the single build
-          dependency from your project. Instead, it will copy all the
-          configuration files and the transitive dependencies (webpack, Babel,
-          ESLint, etc) right into your project so you have full control over
-          them.
+          I work as a Senior Software Engineer at{" "}
+          <a href="https://research.samsung.com/srbd">
+            Samsung R&D Institute Bangladesh
+          </a>
+          , currently contributing to the{" "}
+          <a href="https://samsungmedison.com/">Medison</a> project focused on
+          Ultrasound Imaging. My role involves acquiring ultrasound streams from
+          the machine, processing them through media servers, and delivering the
+          refined output to client applications.
         </p>
         <p>
-          All of the commands except `eject` will still work, but they will
-          point to the copied scripts so you can tweak them. At this point
-          you're on your own. You don't have to ever use `eject`. The curated
-          feature set is suitable for small and middle deployments, and you
-          shouldn't feel obligated to use this feature. However we understand
-          that this tool wouldn't be useful if you couldn't customize it when
-          you are ready for it. ## Learn More You can learn more in the
+          Beyond my development work, I am an active member of our research task
+          force, with a strong interest and hands-on experience in Computer
+          Vision. I am also open to exploring other areas within machine
+          learning.
+        </p>
+        <p>
+          I have received my bachelor's degree from the{" "}
+          <a href="https://www.du.ac.bd/body/CSE">
+            Department of Computer Science and Engineering, University of Dhaka.
+          </a>
         </p>
       </div>
 
@@ -72,6 +78,11 @@ const FeedContents = () => {
         <div className="list ls-news">
           {projects.map((item, i) => (
             <div
+              onClick={() => {
+                if (item.link) {
+                  window.open(item.link, "_blank");
+                }
+              }}
               className={`item item-pro ${i % 2 === 0 ? "" : "light"}`}
               title={item.tooltip}
             >
@@ -93,7 +104,7 @@ const FeedContents = () => {
         </div>
       </div>
 
-      <div className="section contacts">
+      <div className="section contacts" id="contacts">
         <h2 className="header">Contacts</h2>
         <div
           style={{

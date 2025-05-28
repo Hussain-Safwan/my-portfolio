@@ -1,5 +1,5 @@
 body {
-  background-color: #222;
+  background-color: #1a2130;
   color: #ddd;
   font-family: "Scheherazade New", serif;
   font-weight: 400;
@@ -86,6 +86,12 @@ h4 {
 
 .feed-contents p {
   line-height: 17.5px;
+}
+.feed-contents .intro {
+  font-size: 20px;
+}
+.feed-contents .intro p {
+  line-height: 20px;
 }
 
 .feed-contents h2 {
